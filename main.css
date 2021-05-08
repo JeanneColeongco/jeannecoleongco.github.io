@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes highlighter {
+	0% {
+		background-position: 0%;
+	}
+	100% {
+		background-position: -100%;
+	}
+}
+
+body {
+	animation: 1.5s ease-out 0s 1 slideInFromLeft;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	font-family: 'Lato', sans-serif;
+	margin: auto;
+	width: 50%;
+	color: #0E1116;
+	background-color: #FFE0B5;
+}
+
+head {
+	padding-bottom: 50px;
+}
+h3 {
+	word-spacing: 2em;
+}
+.highlight {
+	background-image: linear-gradient(to right, transparent 50%, #C4F7A1 50%);
+	background-size: 200%;
+	animation: 1.5s highlighter;
+	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+}
+
+#header {
+	padding-bottom: 50px;
+}
+#tagline {
+	word-spacing: 0.5em;
+}
+h5 {
+	line-height: 2em;
+}
+#links {
+	word-spacing: 3em;
+}
+#links img {
+	width: 20px;
+	height: 20px;
+	padding-right: 5px;
+}
+#menu a, #links a {
+	text-decoration: none;
+	color: #23720C;
+}
+#menu a:hover, #links a:hover {
+	text-decoration: underline;
+	color: #0E1116;
+}
+#me {
+	font-family: 'Permanent Marker', cursive;
+	font-size: larger;
+}
+
+#summary {
+	padding-right: 30%;
+}
+#summary img {
+	height: 50px;
+	padding-right: 20px;
+	float: left;
+}
+
+#articles img {
+	width: 200px;
+	height: 100px;
+	padding-right: 20px;
+	float: left;
+}
+#summary a:hover span, #articles a:hover span {
+	background-image: linear-gradient(to right, transparent 50%, #C4F7A1 50%);
+	background-size: 200%;
+	animation: 1.5s highlighter;
+	animation-fill-mode: forwards;
+}
+#summary a, #articles a {
+	text-decoration: none;
+	color: #0E1116;
+}
+
+
+#experience, #articles {
+	padding-right: 200px;
+}
+.dates {
+	font-size: smaller;
+	letter-spacing: 0.2em;
+}
+h4 {
+	font-size: larger;
+}
+.jobs {
+	font-size: larger;
+	color: #23720C;
+}
