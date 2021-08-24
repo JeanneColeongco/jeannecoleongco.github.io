@@ -138,3 +138,12 @@ h4 {
 	font-size: larger;
 	color: #23720C;
 }
+
+#gateway a {
+	text-decoration: none;
+	color: #23720C;
+}
+#gateway a:hover {
+	text-decoration: underline;
+	color: #0E1116;
+}
