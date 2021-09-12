@@ -34,6 +34,12 @@ html {
 	color: #0E1116;
 }
 
+#index ul .tldr {
+	float: left;
+	position: relative;
+	margin-right: 20px;
+}
+
 #exp, #bonus {
 	animation: 1s ease-out 0s 1 slideInFromLeft;
 	padding-top: 50px;
@@ -67,8 +73,9 @@ h3 {
 }
 
 #header {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20%
 }
 #tagline {
 	word-spacing: 0.5em;
@@ -112,6 +119,10 @@ h5 {
 	padding-right: 20px;
 	float: left;
 }
+#projects img {
+	float: left;
+}
+
 #summary a:hover span, #articles a:hover span {
 	background-image: linear-gradient(to right, transparent 50%, #C4F7A1 50%);
 	background-size: 200%;
@@ -124,7 +135,7 @@ h5 {
 }
 
 
-#experience, #articles {
+#experience, #articles, #projects {
 	padding-right: 200px;
 }
 .dates {
