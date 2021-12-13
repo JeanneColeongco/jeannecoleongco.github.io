@@ -1,3 +1,14 @@
+/*
+COLOR PALETTE
+#9198e5 // light blue
+#6679a0 // dark blue
+#e5919a // pink
+#a0666c // red -- clicked links
+#e5e391 // yellow
+#bebebe // gray
+#191919 // black -- default
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
@@ -5,19 +16,10 @@ html, body {
 	height: 100%;
 }
 
-/*
-COLOR PALETTE
-#9198e5 // light blue
-#6679a0 // dark blue
-#e5919a // pink
-#a0666c // red
-#e5e391 // yellow
-#bebebe // gray
-#191919 // black
-*/
 #header {
 	top: 35%;
 	color: #191919;
+	text-align: center;
 	position: fixed; /* or absolute */
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -30,11 +32,11 @@ COLOR PALETTE
 
 #me {
 	font-family: 'Permanent Marker', cursive;
-	font-size: 60px;
+	font-size: 300%;
 }
 #tagline {
 	font-family: 'Lato', sans-serif;
-	font-size: 30px;
+	font-size: 150%;
 }
 
 /* Fade in effects */
