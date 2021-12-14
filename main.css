@@ -16,27 +16,132 @@ html, body {
 	height: 100%;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 #header {
-	top: 35%;
+	top: 30%;
 	color: #191919;
 	text-align: center;
-	position: fixed; /* or absolute */
+	position: absolute;
 	left: 50%;
 	transform: translate(-50%, -50%);
+
 	animation: fadeIn linear 3s;
 	-webkit-animation: fadeIn linear 3s;
 	-moz-animation: fadeIn linear 3s;
 	-o-animation: fadeIn linear 3s;
 	-ms-animation: fadeIn linear 3s;
 }
-
 #me {
 	font-family: 'Permanent Marker', cursive;
 	font-size: 300%;
 }
-#tagline {
+#tagline, #swe #blurb, #research #blurb, #journalist #blurb {
 	font-family: 'Lato', sans-serif;
 	font-size: 150%;
+}
+
+a:hover {
+	background-image: linear-gradient(to right, transparent 50%, #e5e391 50%);
+	background-size: 200%;
+	border-radius: 10px;
+	animation: 1s highlighter;
+	animation-fill-mode: forwards;
+}
+a:visited, a:link {
+	color: #191919;
+	text-decoration: none;
+}
+
+#social_media img {
+	margin: 1em;
+	width: 5%;
+}
+
+#swe, #research, #journalist {
+	left: 0;
+	width: 100%;
+	height: auto;
+  	min-height: 50%;
+	text-align: center;
+	position: absolute;
+}
+
+#swe {
+	top: 60%;
+	color: white;
+	background-color: #191919;
+}
+
+#research {
+	top: 110%;
+	color: #191919;
+	background-color: white;
+}
+
+#journalist {
+	top: 150%;
+	color: white;
+	background-color: #191919;
+}
+
+#blurb {
+	top: 25%;
+	font-size: 150%;
+	padding-left: 20%;
+	padding-right: 20%;
+	line-height: 1.6;
+}
+
+#swe .highlight, #journalist .highlight {
+	background-image: linear-gradient(to right, transparent 50%, #FF0000 50%);
+}
+
+#research .highlight {
+	background-image: linear-gradient(to right, transparent 50%, #e5e391 50%);
+}
+
+.highlight {
+	background-size: 200%;
+	border-radius: 10px;
+	animation: 1s highlighter;
+	animation-delay: .75s;
+	animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 950px) {
+	#social_media img {
+		width: 7%;
+	}
+	#blurb {
+		top: 5em;
+	}
+}
+@media only screen and (max-width: 600px) {
+	#social_media img {
+		width: 10%;
+	}
+	#blurb {
+		top: 100em;
+	}
+	#research {
+	  	top: 150%;
+	}
+	#swe, #research {
+	  	min-height: 70%;
+	}
+}
+
+/* Highlighter effects */
+@keyframes highlighter {
+	0% {
+		background-position: 0%;
+	}
+	100% {
+		background-position: -100%;
+	}
 }
 
 /* Fade in effects */
