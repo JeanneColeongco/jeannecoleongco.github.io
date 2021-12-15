@@ -1,14 +1,3 @@
-/*
-COLOR PALETTE
-#9198e5 // light blue
-#6679a0 // dark blue
-#e5919a // pink
-#FF0000 // red 
-#e5e391 // yellow
-#bebebe // gray
-#191919 // black 
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
@@ -61,7 +50,7 @@ a:hover {
 #header #tagline a:visited, a:link {
 	color: #191919;
 }
-#swe #blurb a:visited, a:link, #journalist #blurb a:visited, a:link {
+#blurb a:visited, a:link {
 	color: white;
 }
 a:visited, a:link {
