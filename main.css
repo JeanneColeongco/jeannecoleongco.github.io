@@ -3,10 +3,10 @@ COLOR PALETTE
 #9198e5 // light blue
 #6679a0 // dark blue
 #e5919a // pink
-#a0666c // red -- clicked links
+#FF0000 // red 
 #e5e391 // yellow
 #bebebe // gray
-#191919 // black -- default
+#191919 // black 
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
@@ -43,15 +43,28 @@ html {
 	font-size: 150%;
 }
 
-a:hover {
+#header #tagline a:hover {
 	background-image: linear-gradient(to right, transparent 50%, #e5e391 50%);
+}
+#swe a:hover, #journalist a:hover {
+	background-image: linear-gradient(to right, transparent 50%, #FF0000 50%);
+}
+a:hover {
 	background-size: 200%;
 	border-radius: 10px;
 	animation: 1s highlighter;
 	animation-fill-mode: forwards;
 }
-a:visited, a:link {
+#header #social_media a:hover img {
+	width: 7%;
+}
+#header #tagline a:visited, a:link {
 	color: #191919;
+}
+#swe a:visited, a:link, #journalist a:visited, a:link {
+	color: white;
+}
+a:visited, a:link {
 	text-decoration: none;
 }
 
