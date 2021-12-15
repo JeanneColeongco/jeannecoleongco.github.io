@@ -67,9 +67,8 @@ a:visited, a:link {
 }
 
 
-/* enlarge icons on hover*/
 #social_media a:hover img {
-	width: 7%;
+	background-color: #e5e391;
 }
 
 #social_media img {
