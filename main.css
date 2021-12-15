@@ -61,7 +61,7 @@ a:hover {
 #header #tagline a:visited, a:link {
 	color: #191919;
 }
-#swe a:visited, a:link, #journalist a:visited, a:link {
+#swe #blurb a:visited, a:link, #journalist #blurb a:visited, a:link {
 	color: white;
 }
 a:visited, a:link {
